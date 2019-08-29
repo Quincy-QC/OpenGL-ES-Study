@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FDk-bE-Qa7">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,47 +13,167 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8B-18-Iut">
-                                <rect key="frame" x="167" y="138" width="80" height="30"/>
+                                <rect key="frame" x="147.66666666666666" y="226" width="80" height="30"/>
                                 <state key="normal" title="To triangles"/>
                                 <connections>
                                     <segue destination="Ep0-4x-PO3" kind="show" id="oT6-Ty-zRK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HN-D2-t1h">
-                                <rect key="frame" x="150.5" y="194" width="113" height="30"/>
+                                <rect key="frame" x="131" y="282" width="113" height="30"/>
                                 <state key="normal" title="To GLK triangles"/>
                                 <connections>
                                     <segue destination="zXy-rT-TKi" kind="show" id="wee-MO-l6j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uag-hW-r9d">
+                                <rect key="frame" x="149" y="338" width="77" height="30"/>
+                                <state key="normal" title="退化三角形"/>
+                                <connections>
+                                    <segue destination="azA-6Q-tFK" kind="show" id="sd7-CO-Nw3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylM-mF-WCc">
+                                <rect key="frame" x="122.66666666666669" y="393" width="130" height="30"/>
+                                <state key="normal" title="GLKViewController"/>
+                                <connections>
+                                    <segue destination="Smr-8O-5YW" kind="show" id="yDQ-et-AAV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnz-JR-gWl">
+                                <rect key="frame" x="162" y="448" width="51" height="30"/>
+                                <state key="normal" title="Texture"/>
+                                <connections>
+                                    <segue destination="J1B-LE-dc1" kind="show" id="c1T-i1-z3n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wih-Kd-slk">
+                                <rect key="frame" x="167.66666666666666" y="496" width="40" height="30"/>
+                                <state key="normal" title="Blend"/>
+                                <connections>
+                                    <segue destination="238-y1-hWB" kind="show" id="97h-ps-tO5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxC-Ls-u3m">
+                                <rect key="frame" x="157" y="534" width="61" height="30"/>
+                                <state key="normal" title="3D Cube"/>
+                                <connections>
+                                    <segue destination="Gok-D7-9NW" kind="show" id="uqW-JD-Sv6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="161-lR-arZ">
+                                <rect key="frame" x="148.66666666666666" y="576" width="78" height="30"/>
+                                <state key="normal" title="illumination"/>
+                                <connections>
+                                    <segue destination="tVV-wv-0FL" kind="show" id="XwZ-GY-iOD"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7HN-D2-t1h" firstAttribute="top" secondItem="m8B-18-Iut" secondAttribute="bottom" constant="26" id="5yv-aj-q0c"/>
-                            <constraint firstItem="m8B-18-Iut" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Blm-Zb-bzu"/>
+                            <constraint firstItem="Uag-hW-r9d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="99N-VU-EzD"/>
+                            <constraint firstItem="m8B-18-Iut" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="138" id="Blm-Zb-bzu"/>
+                            <constraint firstItem="Uag-hW-r9d" firstAttribute="top" secondItem="7HN-D2-t1h" secondAttribute="bottom" constant="26" id="Cd5-Ov-ZLv"/>
+                            <constraint firstItem="Wih-Kd-slk" firstAttribute="top" secondItem="hnz-JR-gWl" secondAttribute="bottom" constant="18" id="FyT-K0-Ce0"/>
+                            <constraint firstItem="Wih-Kd-slk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HyS-Du-Y9t"/>
+                            <constraint firstItem="ylM-mF-WCc" firstAttribute="top" secondItem="Uag-hW-r9d" secondAttribute="bottom" constant="25" id="QtC-3a-TPY"/>
+                            <constraint firstItem="161-lR-arZ" firstAttribute="top" secondItem="qxC-Ls-u3m" secondAttribute="bottom" constant="12" id="TSF-yt-fdo"/>
+                            <constraint firstItem="qxC-Ls-u3m" firstAttribute="top" secondItem="Wih-Kd-slk" secondAttribute="bottom" constant="8" id="WQC-PA-okj"/>
+                            <constraint firstItem="ylM-mF-WCc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XdJ-tX-qew"/>
+                            <constraint firstItem="qxC-Ls-u3m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZLe-Vq-f85"/>
+                            <constraint firstItem="hnz-JR-gWl" firstAttribute="top" secondItem="ylM-mF-WCc" secondAttribute="bottom" constant="25" id="d3Y-ro-qna"/>
                             <constraint firstItem="m8B-18-Iut" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fgN-NN-bgN"/>
+                            <constraint firstItem="161-lR-arZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mpm-ZD-hmp"/>
                             <constraint firstItem="7HN-D2-t1h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pUI-Il-zWF"/>
+                            <constraint firstItem="hnz-JR-gWl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yAb-Qj-m9L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="sbI-oY-sq2"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="453.62318840579712" y="306.69642857142856"/>
+            <point key="canvasLocation" x="453.60000000000002" y="306.6502463054187"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="jrn-Jf-JYc">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="Gok-D7-9NW" customClass="Cube3DViewController" sceneMemberID="viewController">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="JqI-Yo-8Yj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ju0-TU-lrg"/>
+                        <connections>
+                            <outlet property="delegate" destination="Gok-D7-9NW" id="azb-wS-UAF"/>
+                        </connections>
+                    </glkView>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnJ-xa-j5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-942" y="1000"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="FAF-Qz-UPm">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="238-y1-hWB" customClass="GLKBlendViewController" sceneMemberID="viewController">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="h1K-PV-sfG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Tth-3t-pBX"/>
+                        <connections>
+                            <outlet property="delegate" destination="238-y1-hWB" id="Yt4-4U-I8E"/>
+                        </connections>
+                    </glkView>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1Y-eX-Jxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-260" y="1000"/>
+        </scene>
+        <!--OpenGL Demo View Controller-->
+        <scene sceneID="JKp-n1-HBb">
+            <objects>
+                <viewController id="azA-6Q-tFK" customClass="OpenGLDemoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kLD-Y7-Qm7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oHc-P1-aMm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNF-eR-4Ou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="1000"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="nba-vT-6f4">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="tVV-wv-0FL" customClass="IlluminationViewController" sceneMemberID="viewController">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="Pwq-Nv-NRm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7qK-KU-hED"/>
+                        <connections>
+                            <outlet property="delegate" destination="tVV-wv-0FL" id="dmx-Db-Zi8"/>
+                        </connections>
+                    </glkView>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tcf-Px-1Oy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247" y="1298"/>
         </scene>
         <!--TriangleGLK View Controller-->
         <scene sceneID="ic8-Ah-czB">
             <objects>
                 <viewController id="zXy-rT-TKi" customClass="TriangleGLKViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4O8-MU-PbV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hUO-UW-kqz"/>
@@ -63,12 +183,27 @@
             </objects>
             <point key="canvasLocation" x="1248" y="631"/>
         </scene>
+        <!--Texture View Controller-->
+        <scene sceneID="bCv-Z3-6ka">
+            <objects>
+                <viewController id="J1B-LE-dc1" customClass="TextureViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yfS-qb-Y23">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gKr-Lu-vKP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ka2-WP-djf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="964"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="eDd-80-qBL">
             <objects>
                 <navigationController id="FDk-bE-Qa7" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="spf-ys-Kdy">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -84,7 +219,7 @@
             <objects>
                 <viewController id="Ep0-4x-PO3" customClass="TriangleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dsh-Yb-1bo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Vdt-kP-t6L"/>
@@ -93,6 +228,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWe-L6-dcS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1248" y="-31"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="NyL-oE-Aa9">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="Smr-8O-5YW" customClass="GLKDemoViewController" sceneMemberID="viewController">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="gOo-Nv-gmG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UBQ-3v-e7j"/>
+                        <connections>
+                            <outlet property="delegate" destination="Smr-8O-5YW" id="JhA-je-BgD"/>
+                        </connections>
+                    </glkView>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwG-eS-u5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1927" y="286"/>
         </scene>
     </scenes>
 </document>

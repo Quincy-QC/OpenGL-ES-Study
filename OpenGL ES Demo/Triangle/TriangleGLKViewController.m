@@ -46,7 +46,7 @@
     
     self.baseEffect = [[GLKBaseEffect alloc] init];
     self.baseEffect.constantColor = GLKVector4Make(0.0, 1.0, 0.0, 1.0);
-    
+
     [glkView display];
 }
 

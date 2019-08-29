@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610AF37D22E6F66A00CEC8C0 /* glsla.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 61C4723E22E6F45F00457626 /* glsla.fsh */; };
+		610AF38122E6F6E000CEC8C0 /* glsla.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 610AF38022E6F6E000CEC8C0 /* glsla.vsh */; };
+		610AF38422EAED8C00CEC8C0 /* TextureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610AF38322EAED8C00CEC8C0 /* TextureViewController.m */; };
+		6118E8B42305294100D3F5C7 /* GLKBlendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6118E8B32305294100D3F5C7 /* GLKBlendViewController.m */; };
+		6118E8B72306979600D3F5C7 /* Cube3DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6118E8B62306979600D3F5C7 /* Cube3DViewController.m */; };
+		6118E8BB23150A8C00D3F5C7 /* IlluminationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6118E8BA23150A8C00D3F5C7 /* IlluminationViewController.m */; };
+		61B5C51722DC7EC700B15930 /* OpenGLDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B5C51622DC7EC700B15930 /* OpenGLDemoViewController.m */; };
+		61C4723B22E6DA8B00457626 /* GLKDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C4723A22E6DA8B00457626 /* GLKDemoViewController.m */; };
 		61DE0623229E668200212BA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DE0622229E668200212BA0 /* AppDelegate.m */; };
 		61DE0626229E668200212BA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DE0625229E668200212BA0 /* ViewController.m */; };
 		61DE0629229E668200212BA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61DE0627229E668200212BA0 /* Main.storyboard */; };
@@ -20,6 +28,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		610AF38022E6F6E000CEC8C0 /* glsla.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = glsla.vsh; sourceTree = "<group>"; };
+		610AF38222EAED8C00CEC8C0 /* TextureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureViewController.h; sourceTree = "<group>"; };
+		610AF38322EAED8C00CEC8C0 /* TextureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureViewController.m; sourceTree = "<group>"; };
+		6118E8B22305294100D3F5C7 /* GLKBlendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKBlendViewController.h; sourceTree = "<group>"; };
+		6118E8B32305294100D3F5C7 /* GLKBlendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKBlendViewController.m; sourceTree = "<group>"; };
+		6118E8B52306979600D3F5C7 /* Cube3DViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cube3DViewController.h; sourceTree = "<group>"; };
+		6118E8B62306979600D3F5C7 /* Cube3DViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cube3DViewController.m; sourceTree = "<group>"; };
+		6118E8B923150A8C00D3F5C7 /* IlluminationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IlluminationViewController.h; sourceTree = "<group>"; };
+		6118E8BA23150A8C00D3F5C7 /* IlluminationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IlluminationViewController.m; sourceTree = "<group>"; };
+		61B5C51522DC7EC700B15930 /* OpenGLDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLDemoViewController.h; sourceTree = "<group>"; };
+		61B5C51622DC7EC700B15930 /* OpenGLDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLDemoViewController.m; sourceTree = "<group>"; };
+		61C4723922E6DA8B00457626 /* GLKDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKDemoViewController.h; sourceTree = "<group>"; };
+		61C4723A22E6DA8B00457626 /* GLKDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKDemoViewController.m; sourceTree = "<group>"; };
+		61C4723E22E6F45F00457626 /* glsla.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = glsla.fsh; sourceTree = "<group>"; };
 		61DE061E229E668200212BA0 /* OpenGL ES Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGL ES Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61DE0621229E668200212BA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		61DE0622229E668200212BA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +71,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6118E8B82306979E00D3F5C7 /* 3D */ = {
+			isa = PBXGroup;
+			children = (
+				6118E8B52306979600D3F5C7 /* Cube3DViewController.h */,
+				6118E8B62306979600D3F5C7 /* Cube3DViewController.m */,
+				6118E8B923150A8C00D3F5C7 /* IlluminationViewController.h */,
+				6118E8BA23150A8C00D3F5C7 /* IlluminationViewController.m */,
+			);
+			path = 3D;
+			sourceTree = "<group>";
+		};
 		61DE0615229E668200212BA0 = {
 			isa = PBXGroup;
 			children = (
@@ -70,10 +103,13 @@
 			children = (
 				61DE0644229E78D800212BA0 /* glsl.fsh */,
 				61DE0643229E78D800212BA0 /* glsl.vsh */,
+				61C4723E22E6F45F00457626 /* glsla.fsh */,
+				610AF38022E6F6E000CEC8C0 /* glsla.vsh */,
 				61DE0621229E668200212BA0 /* AppDelegate.h */,
 				61DE0622229E668200212BA0 /* AppDelegate.m */,
 				61DE0624229E668200212BA0 /* ViewController.h */,
 				61DE0625229E668200212BA0 /* ViewController.m */,
+				6118E8B82306979E00D3F5C7 /* 3D */,
 				61DE063A229E678600212BA0 /* Triangle */,
 				61DE0627229E668200212BA0 /* Main.storyboard */,
 				61DE062A229E668400212BA0 /* Assets.xcassets */,
@@ -91,6 +127,14 @@
 				61DE0638229E676D00212BA0 /* TriangleViewController.m */,
 				61DE0647229E880100212BA0 /* TriangleGLKViewController.h */,
 				61DE0648229E880100212BA0 /* TriangleGLKViewController.m */,
+				61B5C51522DC7EC700B15930 /* OpenGLDemoViewController.h */,
+				61B5C51622DC7EC700B15930 /* OpenGLDemoViewController.m */,
+				61C4723922E6DA8B00457626 /* GLKDemoViewController.h */,
+				61C4723A22E6DA8B00457626 /* GLKDemoViewController.m */,
+				610AF38222EAED8C00CEC8C0 /* TextureViewController.h */,
+				610AF38322EAED8C00CEC8C0 /* TextureViewController.m */,
+				6118E8B22305294100D3F5C7 /* GLKBlendViewController.h */,
+				6118E8B32305294100D3F5C7 /* GLKBlendViewController.m */,
 			);
 			path = Triangle;
 			sourceTree = "<group>";
@@ -155,6 +199,8 @@
 				61DE062E229E668400212BA0 /* LaunchScreen.storyboard in Resources */,
 				61DE0645229E78D800212BA0 /* glsl.vsh in Resources */,
 				61DE062B229E668400212BA0 /* Assets.xcassets in Resources */,
+				610AF38122E6F6E000CEC8C0 /* glsla.vsh in Resources */,
+				610AF37D22E6F66A00CEC8C0 /* glsla.fsh in Resources */,
 				61DE0646229E78D800212BA0 /* glsl.fsh in Resources */,
 				61DE0629229E668200212BA0 /* Main.storyboard in Resources */,
 			);
@@ -167,9 +213,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6118E8BB23150A8C00D3F5C7 /* IlluminationViewController.m in Sources */,
+				61B5C51722DC7EC700B15930 /* OpenGLDemoViewController.m in Sources */,
 				61DE0639229E676D00212BA0 /* TriangleViewController.m in Sources */,
+				6118E8B42305294100D3F5C7 /* GLKBlendViewController.m in Sources */,
+				610AF38422EAED8C00CEC8C0 /* TextureViewController.m in Sources */,
+				6118E8B72306979600D3F5C7 /* Cube3DViewController.m in Sources */,
 				61DE0626229E668200212BA0 /* ViewController.m in Sources */,
 				61DE0631229E668400212BA0 /* main.m in Sources */,
+				61C4723B22E6DA8B00457626 /* GLKDemoViewController.m in Sources */,
 				61DE0623229E668200212BA0 /* AppDelegate.m in Sources */,
 				61DE0649229E880100212BA0 /* TriangleGLKViewController.m in Sources */,
 			);
